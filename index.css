@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+.noir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+}
+.noir ul {
+    display: flex;
+    margin-left: 350px;
+}
+.noir ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+.noir a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.noir .de{
+    margin-left: 200px;
+}
+
+
+
+/*********************************** barre de nav debut ***************************/
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* position: relative; */
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    flex-wrap: wrap;
+}
+.liste ul{
+    display: flex;
+    padding: 15px;
+}
+.liste li{
+    list-style-type: none;
+    border-left: 1px black solid;
+}
+.icone ul{
+    display: flex;
+    margin-left: 100px; 
+}
+.icone li{
+    list-style-type: none;
+    border-left: 1px black solid;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 30px 0px 30px;
+    color: black;
+}
+.orange img{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -0px;
+    /* right: 1055px;  */
+    left: 100px;
+}
+
+/*********************************** barre de nav fin ***************************/
+
+/*********************************** section1 debut ***************************/
+.section1{
+    background-image: url(images/informatique.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+}
+.section1 img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+.barre{
+    background-color: rgb(253, 146, 7);
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.carrre{
+    border: 1px white solid;
+    padding: 15px;
+}
+.section1 h2{
+    font-size: 70px;
+}
+.section1 h3{
+    margin-bottom: 100px;
+}
+.blanc img{
+    width: 450px;
+    height: 300px;
+}
+.blanc img{
+    position: absolute;
+}
+
+fieldset{
+    height: 270px;
+    width: 350px;
+    position: relative;
+    top: 55px;
+    left: 40px;
+    border: 4px white solid;
+    font-size: 20px;
+}
+.photo{
+    display: flex;
+    gap: 100px;
+}
+
+/*********************************** section1 fin ***************************/
+
+.section2{
+    background-color: rgb(221, 224, 224);
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.section2 p {
+   font-size: 25px;
+}
+
+
+
+
+
+@media  only screen and (max-width: 600px){
+    /* barre nav */
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+         align-items: center;
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        flex: wrap;
+    }
+    .liste ul{
+        display: flex;
+        flex-direction: column; 
+         margin-right: 10px;
+        
+    }
+    .icone ul{
+        display: flex;
+        flex-direction: column; 
+        margin-right: 135px;
+    }
+
+
+    .liste li{
+        padding: 5px;
+    }
+    .icone li{
+        padding: 5px;
+    } 
+    .noir .de{
+        display: none;
+    }
+    .noir ul{
+        display: none;
+    }
+
+    /* section1 */
+
+    .section1 h2{
+        font-size: 25px;
+    }
+    .section1 h3{
+        font-size: 10px;
+    }
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .blanc img{
+        width: 300px;
+        margin-left: -65px;
+    }
+    fieldset{
+        width: 220px;
+        margin-left: -50px;
+    }
+
+    /* section1 */
+    .section2{
+        height: 600px;
+    }
+
+}
